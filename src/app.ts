@@ -1,7 +1,8 @@
 import { ICustomElementViewModel, IEventAggregator, ILogger } from 'aurelia';
 export class App implements ICustomElementViewModel {
 
-    constructor(@ILogger private readonly logger: ILogger,
+    constructor(
+        @ILogger private readonly logger: ILogger,
         @IEventAggregator private readonly eventAggregator: IEventAggregator) {
         this.logger = this.logger.scopeTo(App.name);
         this.attachEvents();

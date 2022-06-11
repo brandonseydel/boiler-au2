@@ -16,7 +16,8 @@
         "baseUrl": ".",
         "paths": {
             "pages/*": ["./src/pages/*"],
-            "commmon/*": ["./src/common/*"],
+            "common/*": ["./src/common/*"],
+            "common": ["./src/common/index"],
             "elements/*": ["./src/resources/elements/*"],
             "attributes/*": ["./src/resources/attributes/*"],
             "value-converters/*": ["./src/resources/value-converters/*"]
