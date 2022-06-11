@@ -1,6 +1,9 @@
 import { App } from './app';
 import { RouterConfiguration } from '@aurelia/router';
 import Aurelia /*, { StyleConfiguration }*/ from 'aurelia';
+
+import * as resources from './resources';
+
 // Css files imported in this main file are NOT processed by style-loader
 // They are for sharedStyles in shadowDOM.
 // However, css files imported in other js/ts files are processed by style-loader.
@@ -18,6 +21,7 @@ Aurelia
     basePath: '/',
     useUrlFragmentHash: false
   }))
+  .register(resources)
   // To use HTML5 pushState routes, replace previous line with the following
   // customized router config.
   // .register(RouterConfiguration.customize({ useUrlFragmentHash: false }))
