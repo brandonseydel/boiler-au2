@@ -1,16 +1,27 @@
 {
-  "compilerOptions": {
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "skipLibCheck": true,
-    "target": "ES2017",
-    "esModuleInterop": true,
-    "resolveJsonModule": true,
-    "importHelpers": true,
-    "sourceMap": true
-  },
-  "include": ["test", "src"],
-  "files": ["src/resource.d.ts"]
+    "compilerOptions": {
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "module": "esnext",
+        "moduleResolution": "node",
+        "skipLibCheck": true,
+        "target": "ESNext",
+        "esModuleInterop": true,
+        "resolveJsonModule": true,
+        "importHelpers": true,
+        "sourceMap": true,
+        // enable this after hmr bug fix
+        // "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "baseUrl": ".",
+        "paths": {
+            "pages/*": ["./src/pages/*"],
+            "commmon/*": ["./src/common/*"],
+            "elements/*": ["./src/resources/elements/*"],
+            "attributes/*": ["./src/resources/attributes/*"],
+            "value-converters/*": ["./src/resources/value-converters/*"]
+        }
+    },
+    "include": ["test", "src"],
+    "files": ["src/resource.d.ts"]
 }

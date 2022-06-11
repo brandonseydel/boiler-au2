@@ -1,4 +1,5 @@
 import { ICustomElementViewModel, customElement } from 'aurelia';
+import { IState } from '../../../common/state';
 
 @customElement({
   capture: true,

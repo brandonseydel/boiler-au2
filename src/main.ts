@@ -13,9 +13,16 @@ Aurelia
     sharedStyles: [shared]
   }))
   */
-  .register(RouterConfiguration)
+  .register(RouterConfiguration.customize({
+    useDirectRouting: true,
+    basePath: '/',
+    useUrlFragmentHash: false
+  }))
   // To use HTML5 pushState routes, replace previous line with the following
   // customized router config.
   // .register(RouterConfiguration.customize({ useUrlFragmentHash: false }))
   .app(App)
   .start();
+
+
+

@@ -1,4 +1,4 @@
-export class MissingPage {
+export class Missing {
   public static parameters = ['id'];
   public missingComponent: string;
 
